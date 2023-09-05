@@ -41,16 +41,14 @@ pipeline {
     
     post {
         success {
-            // Send a success notification email with logs as attachment
-            emailext subject: 'Pipeline Success',
-                body: 'The Jenkins pipeline has completed successfully.',
-                attachmentsPattern: '**/*'
+            mail to: "samiabdullah2004@gmail.com",
+            subject: "Build Status Email",
+            body: "Build was successful!"
         }
         failure {
-            // Send a failure notification email with logs as attachment
-            emailext subject: 'Pipeline Failure',
-                body: 'The Jenkins pipeline has failed.',
-                attachmentsPattern: '**/*'
+            mail to: "samiabdullah2004@gmail.com",
+            subject: "Build Status Email",
+            body: "Build failed"
         }
     }
 }
