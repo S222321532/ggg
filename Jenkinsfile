@@ -43,12 +43,12 @@ pipeline {
         success {
             mail to: "samiabdullah2004@gmail.com",
             subject: "Build Status Email",
-            body: "Build was successful!",
+            body: "Build was successful!"
         }
         failure {
             mail to: "samiabdullah2004@gmail.com",
             subject: "Build Status Email",
-            body: "Build failed",
+            body: "Build failed"
         }
     }
 }
