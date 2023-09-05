@@ -29,11 +29,7 @@ pipeline {
                 sh 'aws s3 cp target/my-app.war s3://your-staging-bucket/' // AWS CLI for S3 deployment
             }
         }
-        stage('Integration Tests on Staging') {
-            steps {
-               sh // You can run Selenium or other integration tests here
-            }
-        }
+
         stage('Deploy to Production') {
             steps {
                 sh 'aws s3 cp target/my-app.war s3://your-production-bucket/' // AWS CLI for S3 deployment
