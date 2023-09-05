@@ -4,27 +4,27 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo "Use a build automation tool like Maven to compile and package your code"
+                echo "Maven would be utilized here"
             }
         }
         stage('Unit and Integration Tests') {
             steps {
-                echo "Use test automation tools for unit and integration tests (e.g., JUnit, TestNG)"
+                echo "JUnit would be utilized here"
             }
         }
         stage('Code Analysis') {
             steps {
-                echo "Use a code analysis tool (e.g., SonarQube) to analyze your code"
+                echo "SonarQube would be utilized here"
             }
         }
         stage('Security Scan') {
             steps {
-                echo "Use a security scanning tool (e.g., OWASP ZAP) to identify vulnerabilities"
+                echo "OWASP ZAP would be used here"
             }
         }
         stage('Deploy to Staging') {
             steps {
-                echo "Deploy the application to a staging server (e.g., AWS EC2)"
+                echo "AWS EC2 would be used here"
             }
         }
         stage('Integration Tests on Staging') {
@@ -34,7 +34,7 @@ pipeline {
         }
         stage('Deploy to Production') {
             steps {
-                echo "Deploy the application to a production server (e.g., AWS EC2)"
+                echo "AWS EC2 would be used here"
             }
         }
     }
