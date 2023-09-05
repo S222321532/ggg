@@ -44,13 +44,11 @@ pipeline {
             mail to: "samiabdullah2004@gmail.com",
             subject: "Build Status Email",
             body: "Build was successful!",
-            attachmentsPattern: "**/*"
         }
         failure {
             mail to: "samiabdullah2004@gmail.com",
             subject: "Build Status Email",
             body: "Build failed",
-            attachmentsPattern: "**/*"
         }
     }
 }
