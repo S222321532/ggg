@@ -31,7 +31,7 @@ pipeline {
         }
         stage('Integration Tests on Staging') {
             steps {
-                // You can run Selenium or other integration tests here
+               sh // You can run Selenium or other integration tests here
             }
         }
         stage('Deploy to Production') {
