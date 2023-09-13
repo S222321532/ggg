@@ -39,6 +39,11 @@ pipeline {
                 echo "AWS EC2 would be used here"
             }
         }
+        stage('Complete') {
+            steps {
+                echo "Completed"
+            }
+        }
 
     }
 
